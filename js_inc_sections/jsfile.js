@@ -1,0 +1,3 @@
+function alertfun(){
+    alert("Hola")
+}
