@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <h1>Fibonacci Series</h1>
+    <script lang="JavaScript">
+        function fibonacci(num) {
+            let num1 = 0;
+            let num2 = 1;
+            let sum;
+            let i = 0;
+            for (i = 0; i < num; i++) {
+                sum = num1 + num2;
+                num1 = num2;
+                num2 = sum;
+            }
+            // return num2;
+            console.log("Fibonacci series for "+num+" is: "+num2);
+        }
+        // console.log("Fibonacci(5): " + fibonacci(5));
+        // console.log("Fibonacci(8): " + fibonacci(8));
+    </script>
+    
+    <form>
+        <label>Enter a number: <input type="number" name="num" id="num"></label>
+        <input type="button" value="Submit" onclick="fibonacci(num.value)">
+    </form>
+</body>
+</html>
